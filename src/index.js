@@ -74,11 +74,11 @@ axios
   .get(`https://dog.ceo/api/breed/retriever/images/random/5`)
   .then((res) => {
     const images = res.data.message;
-    images.forEach(image => {
-      const dogCard = dogCardMaker({ imageURL, breed })
+    images.forEach((image) => {
+      const dogCard = dogCardMaker({ imageURL, breed });
       // append to DOM
-    })
-    
+      entryPoint
+    });
   })
   .catch((err) => {
     debugger;
