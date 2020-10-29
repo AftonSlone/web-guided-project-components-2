@@ -60,8 +60,6 @@ function dogCardMaker({ imageURL, breed }) { // destructuring
   return dogCard;
 }
 
-//
-
 // 👉 TASK 4- Bring the Axios library into the project using one of two methods:
 //    * Traditional way: put another script tag inside index.html (`https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js`)
 //    * Proyects with npm: install it with npm and import it into this file
@@ -70,6 +68,8 @@ function dogCardMaker({ imageURL, breed }) { // destructuring
 //    * ON SUCCESS: use the data to create dogCards and append them to the entry point
 //    * ON FAILURE: log the error to the console
 //    * IN ANY CASE: log "done" to the console
+
+
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
 // that takes a breed and a count (of dogs)
