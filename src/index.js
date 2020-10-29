@@ -7,6 +7,7 @@ const result = axios.get("https://lambda-times-api.herokuapp.com/friends");
 
 console.log(result);
 
+
 // 👉 TASK 1- Test out the following endpoints:
 
 //  https://lambda-times-api.herokuapp.com/friends
