@@ -81,7 +81,7 @@ axios
     });
   })
   .catch((err) => {
-    console.log("something went wrong!");
+    console.log("something went wrong!", err);
   })
   .finally(() => {
     console.log("done");
