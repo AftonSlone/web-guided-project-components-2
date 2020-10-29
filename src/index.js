@@ -81,8 +81,9 @@ axios
     });
   })
   .catch((err) => {
-    debugger;
-  });
+    console.log('something went wrong!')
+  })
+  .finally()
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
 // that takes a breed and a count (of dogs)
