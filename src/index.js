@@ -3,17 +3,17 @@
 // no import if used script tag!
 import axios from "axios";
 
-const result = axios.get("https://lambda-times-api.herokuapp.com/friends");
+console.log("1. about to fetch data with axios");
 
-console.log('1. about to fetch data with axios')
+const result = axios.get("https://lambda-times-api.herokuapp.com/friends");
 
 result.then((futureData) => {
   // future code for when the data actually arrives
   // freedom to assume that the data is here
-  console.log('2. here is the future data', futureData)
+  console.log("2. here is the future data", futureData);
 });
 
-console.log('3. we requested data with axios')
+console.log("3. we requested data with axios");
 
 // 👉 TASK 1- Test out the following endpoints:
 
