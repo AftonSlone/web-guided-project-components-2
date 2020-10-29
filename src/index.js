@@ -11,6 +11,10 @@ axios
     // future code for when the data actually arrives
     // freedom to assume that the data is here
     console.log("2. here is the future data", futureData);
+  })
+  .catch((drama) => {
+    // handle the drama
+    console.log(drama);
   });
 
 console.log("3. we requested data with axios");
