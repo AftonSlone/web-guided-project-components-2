@@ -71,11 +71,11 @@ function dogCardMaker({ imageURL, breed }) {
 //    * IN ANY CASE: log "done" to the console
 
 axios
-  .get(`https://dog.ceo/api/breed/retriever/images/random/5`)
+  .get(`https://dog.ceo/api/breed/retriever/images/random/6`)
   .then((res) => {
     const images = res.data.message;
     images.forEach((image) => {
-      const dogCard = dogCardMaker({ imageURL, breed });
+      const dogCard = dogCardMaker({ imageURL: image, breed: "retriever" });
       // append to DOM
       entryPoint.append(dogCard);
     });
