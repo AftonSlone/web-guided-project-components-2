@@ -39,7 +39,8 @@ const entryPoint = document.querySelector(".entry");
 
 // 👉 TASK 3- `dogCardMaker` takes an object and returns a Dog Card.
 // Use this function to build a Card, and append it to the entry point.
-function dogCardMaker({ imageURL, breed }) { // destructuring
+function dogCardMaker({ imageURL, breed }) {
+  // destructuring
   // instantiating the elements
   const dogCard = document.createElement("div");
   const image = document.createElement("img");
@@ -70,10 +71,13 @@ function dogCardMaker({ imageURL, breed }) { // destructuring
 //    * IN ANY CASE: log "done" to the console
 
 axios
-.get(`https://dog.ceo/api/breed/retriever/images/random/5`)
-.then(res => {
-  debugger;
-})
+  .get(`https://dog.ceo/api/breed/retriever/images/random/5`)
+  .then((res) => {
+    debugger;
+  })
+  .catch((err) => {
+    debugger;
+  });
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
 // that takes a breed and a count (of dogs)
