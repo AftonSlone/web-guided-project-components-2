@@ -7,6 +7,11 @@ const result = axios.get("https://lambda-times-api.herokuapp.com/friends");
 
 console.log(result);
 
+result.then(futureData => {
+  // future code for when the data actually arrives
+  // freedom 
+})
+
 
 // 👉 TASK 1- Test out the following endpoints:
 
