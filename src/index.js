@@ -39,7 +39,7 @@ const entryPoint = document.querySelector(".entry");
 
 // 👉 TASK 3- `dogCardMaker` takes an object and returns a Dog Card.
 // Use this function to build a Card, and append it to the entry point.
-function dogCardMaker({ imageURL, breed }) {
+function dogCardMaker({ imageURL, breed }) { // destructuring
   // instantiating the elements
   const dogCard = document.createElement("div");
   const image = document.createElement("img");
