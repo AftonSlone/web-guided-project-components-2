@@ -75,9 +75,10 @@ axios
   .then((res) => {
     const images = res.data.message;
     images.forEach(image => {
-      
+      const dogCard = dogCardMaker({ imageURL, breed })
+      // append to DOM
     })
-    dogCardMaker({ imageURL, breed })
+    
   })
   .catch((err) => {
     debugger;
