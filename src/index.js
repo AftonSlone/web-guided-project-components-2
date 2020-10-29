@@ -60,6 +60,8 @@ function dogCardMaker({ imageURL, breed }) {
   return dogCard;
 }
 
+// Pending vs Fulfilled vs Rejected vs Settled
+
 // 👉 TASK 4- Bring the Axios library into the project using one of two methods:
 //    * Traditional way: put another script tag inside index.html (`https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js`)
 //    * Proyects with npm: install it with npm and import it into this file
