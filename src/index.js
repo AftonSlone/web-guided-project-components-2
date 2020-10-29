@@ -70,7 +70,10 @@ function dogCardMaker({ imageURL, breed }) { // destructuring
 //    * IN ANY CASE: log "done" to the console
 
 axios
-.get()
+.get(`https://dog.ceo/api/breed/retriever/images/random/5`)
+.then(res => {
+  debugger;
+})
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
 // that takes a breed and a count (of dogs)
