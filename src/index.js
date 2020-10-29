@@ -4,7 +4,7 @@
 import axios from "axios";
 
 console.log("1. about to fetch data with axios");
-
+// Pending vs Fulfilled vs Rejected vs Settled
 axios
   .get("https://lambda-times-api.herokuapp.com/friends")
   .then((futureData) => {
@@ -60,7 +60,7 @@ function dogCardMaker({ imageURL, breed }) {
   return dogCard;
 }
 
-// Pending vs Fulfilled vs Rejected vs Settled
+// 
 
 // 👉 TASK 4- Bring the Axios library into the project using one of two methods:
 //    * Traditional way: put another script tag inside index.html (`https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js`)
